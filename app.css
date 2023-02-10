@@ -106,6 +106,13 @@ h4{
 }
 #customer-detail-form{
     text-align: center;  
+    
+}
+form{
+    font-size: x-large;
+    font-weight: 600;
+    color: #000;
+    
 }
 
 #confirm-purchase{
@@ -132,17 +139,48 @@ h4{
 .seat{
     display: grid;
     place-content: center;
-    border-radius: 5px;
+    border-radius: 0px;
     /* background-color: pink; */
 }
-.available-seat{
-    background-color: green;
-}
+.available-seat {
+        border-radius: 5px;
+        background: linear-gradient(90deg, #73ff00, #00ff88);
+        animation: button 1s linear infinite;
+     }
+     @keyframes button {
+         0%{
+             background: linear-gradient(0deg, #73ff00, #0079ff);
+         }
+         12%{
+             background: linear-gradient(45deg, #73ff00, #0079ff);
+         }
+         24%{
+             background: linear-gradient(95deg, #73ff00, #0079ff);
+         }
+         36%{
+             background: linear-gradient(145deg, #73ff00, #0079ff);
+         }
+         48%{
+             background: linear-gradient(195deg, #73ff00, #0079ff);
+         }
+         60%{
+             background: linear-gradient(245deg, #73ff00, #0079ff);
+         }
+         72%{
+             background: linear-gradient(295deg, #73ff00, #0079ff);
+         }
+         100%{
+             background: linear-gradient(360deg, #73ff00, #0079ff);  
+         }
+     }
+
 .unavailable-seat{
     background-color: red;
+    border-radius: 5px;
 }
 .select-seat{
-    border:4px outset rgb(0, 0, 0);
+    border:4px outset rgb(0, 253, 84);
+    border-radius: 25px;
 }
 
 
@@ -156,9 +194,9 @@ h4{
 input{
     width: 200px;
     height: 35px;
-    padding: .5rem;
-    background-color: #ffffff;
-    border-radius: 5px;
+    padding: .6rem;
+    background-color: #fff;
+    border-radius: 10px;
 }
 @keyframes rotate {
     from{transform: rotate(0deg);}
