@@ -43,6 +43,7 @@ button{
     align-items: center;
     gap: 1rem;
 }
+
 .movie-holder a{
     flex: 1;
 }
@@ -76,6 +77,11 @@ button{
     width: auto;
     height: 250px;
     border-radius: 10px;
+    border: #00ff88;
+}
+.movie-img-wrapper:hover{
+    height: 270px;
+    transition: .3s linear;
 }
 #booker{
     display: flex;
